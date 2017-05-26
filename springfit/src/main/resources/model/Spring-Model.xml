@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="statsDAO" class="com.jstartpro.springfit.dao.impl.JdbcStatsDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="playerDAO" class="com.jstartpro.springfit.dao.impl.JdbcPlayerDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="teamDAO" class="com.jstartpro.springfit.dao.impl.JdbcTeamDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="dashboard" class="com.jstartpro.springfit.webapp.Dashboard">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</beans>

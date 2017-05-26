@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.jstartpro.com/dailyReportIn"
+	xmlns:repIn="http://www.jstartpro.com/dailyReportIn"
+	elementFormDefault="unqualified">
+
+	<element name="report" type="repIn:Report"></element>
+
+	<complexType name="Report">
+		<sequence>
+			<element name="date" type="date" />
+			<element name="team" type="repIn:Team" maxOccurs="3" />
+		</sequence>
+	</complexType>
+
+	<complexType name="Team">
+		<sequence>
+			<element name="teamName" type="repIn:TeamName" />
+			<element name="player" type="repIn:Player" maxOccurs="3" />
+		</sequence>
+	</complexType>
+
+	<complexType name="Player">
+		<sequence>
+			<element name="name" type="repIn:String45Chars" />
+			<element name="cardio" type="int" />
+			<element name="strength" type="int" />
+		</sequence>
+	</complexType>
+
+	<simpleType name="TeamName">
+		<restriction base="string">
+			<enumeration value="Lean Men A" />
+			<enumeration value="Lean Men B" />
+			<enumeration value="Lean Men C" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="String45Chars">
+		<restriction base="string">
+			<maxLength value="45"></maxLength>
+		</restriction>
+	</simpleType>
+</schema>

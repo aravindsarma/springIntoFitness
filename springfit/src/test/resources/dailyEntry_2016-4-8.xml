@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repIn:report xmlns:repIn="http://www.jstartpro.com/dailyReportIn"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.jstartpro.com/dailyReportIn dailyReportIn.xsd ">
+	<date>2016-04-08</date>
+	<team>
+		<teamName>Lean Men A</teamName>
+		<player>
+			<name>Aravind</name>
+			<cardio>3</cardio>
+			<strength>2</strength>
+		</player>
+		<player>
+			<name>Adam</name>
+			<cardio>3</cardio>
+			<strength>4</strength>
+		</player>
+		<player>
+			<name>Tom</name>
+			<cardio>4</cardio>
+			<strength>0</strength>
+		</player>
+	</team>
+	<team>
+		<teamName>Lean Men B</teamName>
+		<player>
+			<name>Greg</name>
+			<cardio>0</cardio>
+			<strength>0</strength>
+		</player>
+		<player>
+			<name>Bhushan</name>
+			<cardio>0</cardio>
+			<strength>0</strength>
+		</player>
+		<player>
+			<name>Andy</name>
+			<cardio>3</cardio>
+			<strength>2</strength>
+		</player>
+	</team>
+	<team>
+		<teamName>Lean Men C</teamName>
+		<player>
+			<name>Sakthi</name>
+			<cardio>0</cardio>
+			<strength>0</strength>
+		</player>
+		<player>
+			<name>Doug</name>
+			<cardio>4</cardio>
+			<strength>0</strength>
+		</player>
+		<player>
+			<name>Siva</name>
+			<cardio>0</cardio>
+			<strength>0</strength>
+		</player>
+	</team>
+</repIn:report>
